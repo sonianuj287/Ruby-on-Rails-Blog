@@ -1,0 +1,23 @@
+ <body>
+ 	<section class="section">
+ 	<div class="container">
+ 		<% @posts.each do |post| %>
+ 			<div class="card">
+ 				<div class="card-content">
+ 					<div class="media">
+ 						<div class="media-content">
+ 							<p class="title is -4" id="af"> 
+ 								<%= link_to post.title, post%>
+ 							</p>
+ 						</div>
+ 					</div>
+ 					<div class="content" id="ae">
+ 						<%= post.content %>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<br>
+ 		<% end %>
+ 	</div>
+ </section>
+</body>
